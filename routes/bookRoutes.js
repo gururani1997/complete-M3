@@ -1,0 +1,13 @@
+var router=require('express').Router();
+var bookController=require('../controllers/bookController');
+router.post('/addBook',bookController.addBook);
+router.post('/editBook',bookController.editBook);
+router.post('/deleteBook',bookController.deleteBook);
+router.post('/uploadImage',bookController.uploadImage);
+router.post('/uploadingViaMulter',bookController.uploadingViaMulter);
+router.post('/checkLike',bookController.checkLike);
+router.post('/countLike',bookController.countLike);
+router.post('/manageUser',bookController.manageUser);
+router.post('/showAllBook',bookController.showAllBook); 
+router.post('/checkDetails',bookController.checkDetails);
+module.exports=router;
